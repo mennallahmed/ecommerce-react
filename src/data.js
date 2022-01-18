@@ -1,9 +1,8 @@
-import image from "./media/slide-img.jpg"
 //"https://i.ibb.co/XsdmR2c/1.png"
 export const sliderItems = [
   {
     id: 1,
-    img: image,
+    img: "https://i.ibb.co/CPpTV82/slide-img2.png",
     title: "SUMMER SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "f5fafd",
