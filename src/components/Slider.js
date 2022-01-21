@@ -14,7 +14,7 @@ const Container = styled.div`
 const Arrow = styled.div`
    width: 50px;
    height: 50px;
-   background-color: #fff7f7;
+   background-color: teal;
    border-radius: 50%;
    display: flex;
    align-items: center;
@@ -26,7 +26,7 @@ const Arrow = styled.div`
    bottom: 0;
    margin: auto;
    cursor: pointer;
-   opacity: 0.5;
+   opacity: 1;
    z-index: 2;
 `
 
@@ -41,7 +41,7 @@ const Slide = styled.div`
    height: 100vh;
    display: flex;
    align-items: center;
-   background-color: #${props => props.bg};
+   background-color: #f5fafd ;
 `
 
 const ImgContainer = styled.div`
