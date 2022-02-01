@@ -18,6 +18,7 @@ router.post("/register", async (req,res)=>{
   }
 })
 
+//LOGIN
 router.post("/login", async (req,res)=>{
   try{
     const user = await User.findOne({username: req.body.username});
@@ -28,7 +29,7 @@ router.post("/login", async (req,res)=>{
     const pass = hashedPassword.toString(CryptoJS.enc.Utf8);
     // Check if the password is correct
     pass !== req.body.password && res.status(401).json("Wrong Credentials");
-
+    // Separate the password and store the rest of the user data
     const {password, ...others} = user._doc;
     res.status(200).json(others);
 
